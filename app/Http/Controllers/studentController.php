@@ -13,8 +13,8 @@ class studentController extends Controller
      */
     public function index()
     {
-      $student = Student::get();
-      return view('list',compact('student'));
+    //   $student = Student::get();
+    //   return view('students.list',compact('student'));
     }
 
     /**
@@ -24,7 +24,7 @@ class studentController extends Controller
      */
     public function create()
     {
-       return view('create');
+       return view('students.create');
     }
 
     /**
@@ -47,7 +47,7 @@ class studentController extends Controller
                 'phone_number' => $request->phone_number,
             ]);
             if($student){
-                return redirect()->route('student.create')->with('msg','Data has been Successfully Added');
+                return redirect()->route('student.list')->with('msg','Data has been Successfully Added');
             }else{
                 return redirect()->route('student.list')->with('msgs','Data is not added');
             }
@@ -75,7 +75,7 @@ class studentController extends Controller
     public function edit($id)
     {
                 $student = Student::find($id);
-        return view('edit',compact('student'));
+        return view('students.edit',compact('student'));
     }
 
     /**
@@ -108,7 +108,7 @@ class studentController extends Controller
      */
     public function destroy($id)
     {
-    //     Student::destroy($id);
-    //     return redirect()->route('student.list')->with('deletemsg','Data is Successfully Deleted');
+        Student::destroy($id);
+        return redirect()->route('student.list')->with('deletemsg','Data is Successfully Deleted');
     }
 }

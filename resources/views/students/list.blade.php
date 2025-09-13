@@ -1,10 +1,16 @@
-@include('layout.header')
+@extends('layouts.layout')
 
 
 @section('title')
-    {{ 'home' }}
+    {{ 'All Students' }}
 @endsection
+@section('main_content')
 <div class="container-fluid mt-5">
+@if(session('Deleted'))
+    <div class="alert alert-danger">
+        {{ session('Deleted') }}
+    </div>
+@endif
 <table class="table table-striped bordered ">
     <thead>
         <tr>
@@ -44,7 +50,7 @@
                 </form>
              </td> --}}
              <td>
-                <form action={{ route('student.destroy', $value->id) }} method="post">
+                <form action={{ route('subjects.destroy', $value->id) }} method="post">
                     @csrf
                     @method('DELETE')
                     <button type="submit" class="btn btn-danger">Delete</button>
@@ -55,4 +61,5 @@
 
 </table>
 </div>
-@include('layout.footer')
+@endsection
+{{-- @include('layout.footer') --}}

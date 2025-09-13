@@ -1,4 +1,10 @@
-@include('layout.header')
+@extends('layouts.layout')
+
+
+@section('title')
+    {{ 'Form' }}
+@endsection
+@section('main_content')
 <div class="container">
     <div class="row">
         <div class="col-md-12">
@@ -16,7 +22,7 @@
                         <span class="text text-danger"> @error('father_name'){{ $message }}@enderror</span>
                         </br>
                         <label for="date_of_name">Date of Birth:</label>
-                        <input class="form-control" type="text" name="date_of_birth" placeholder="D-O-B">
+                        <input class="form-control" type="text" name="date_of_birth" placeholder="YYYY-MM-DD">
                        <span class="text text-danger"> @error('date_of_birth'){{ $message }}@enderror</span>
                         </br>
                         <label for="cnic">CNIC:</label>
@@ -49,3 +55,4 @@
         </div>
     </div>
 </div>
+@endsection

@@ -3,12 +3,22 @@
     padding: 0px;
 }
 
-.navbar {
-    width: 100%;
-    margin: 0px;
-    background-color: gold;
-    border: 1px thin black;
+.navbar-custom {
+  background: linear-gradient(90deg, #0d6efd, #6610f2);
 }
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #fff !important;
+}
+.nav-link {
+  color: #ffffffcc !important;
+  font-weight: 500;
+}
+.nav-link:hover {
+  color: #fff !important;
+}
+
 .logo {
     margin-left: 30px;
     padding: 5px;
@@ -49,4 +59,9 @@ footer{
     margin-right: 0px;
     background-color: gold;
     border: 1px thin black;
+}
+.navcontainer{
+    display: flex;
+    justify-content: space-evenly;
+
 }

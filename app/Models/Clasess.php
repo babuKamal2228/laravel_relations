@@ -5,14 +5,10 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Student extends Model
+class Clasess extends Model
 {
     use HasFactory;
-    public $timestamps = false;
+       public $timestamps = false;
     protected $guarded =[];
-
-
-    public function classes(){
-        return $this->belongsTo(Clasess::class,'id','classes_id');
-    }
+        protected $table = 'clasess';
 }

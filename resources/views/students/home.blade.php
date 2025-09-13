@@ -25,7 +25,7 @@
 
                             </div>
                             <div class="card-footer">
-                              <a href= {{ route('student.list') }} class="btn btn-primary">All Students</a>
+                              <a href="{{ route('student.list')}}" class="btn btn-primary">All Students</a>
                             </div>
                         </div>
                     </div>
@@ -45,7 +45,7 @@
 
                             </div>
                             <div class="card-footer">
-                              <a href={{ route('student.create') }} class="btn btn-success">Add Student</a>
+                              <a href="{{ route('student.create')}}" class="btn btn-success">Add Student</a>
                             </div>
                         </div>
                     </div>
@@ -65,7 +65,7 @@
 
                             </div>
                             <div class="card-footer">
-                                   <a href={{ route('teachers.create') }} class="btn btn-success">Add Teacher</a>
+                               <a href="" class="btn btn-primary">All Students</a>
                             </div>
                         </div>
                     </div>
@@ -89,7 +89,7 @@
 
                             </div>
                             <div class="card-footer">
-                              <a href={{ route('teachers.list') }} class="btn btn-success">All Teacher</a>
+                              <a href="" class="btn btn-primary">All Students</a>
                             </div>
                         </div>
                     </div>
@@ -105,12 +105,11 @@
                                 </div>
                             </div>
                             <div class="card-body">
-                                <p>Here you can Add All Subjects</p>
+                                <p>Here you can check all students</p>
 
                             </div>
                             <div class="card-footer">
-                             <a href={{ route('subjects.list') }} class="btn btn-success">All Subjects</a>
-
+                             <a href="" class="btn btn-primary">All Students</a>
                             </div>
                         </div>
                     </div>
@@ -130,7 +129,7 @@
 
                             </div>
                             <div class="card-footer">
-                               <a href={{ route('clasess.list') }} class="btn btn-success">All clasess</a>
+                              <a href="" class="btn btn-primary">All Students</a>
                             </div>
                         </div>
                     </div>
