@@ -6,6 +6,7 @@ use App\Http\Controllers\ClasessController;
 use App\Http\Controllers\studentController;
 use App\Http\Controllers\SubjectController;
 use App\Http\Controllers\TeacherController;
+use App\Http\Controllers\JssondataController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -51,3 +52,10 @@ Route::resource('/home/clasess', ClasessController::class)->names([
     'store' => 'clasess.store',
     'destroy' =>'clasess.destroy',
 ]);
+Route::resource('/home/jssondata',JssondataController::class)
+    ->names(
+    [
+        'create' => 'jssondata.create',
+        'store' => 'jssondata.store',
+        'index' => 'jsondata.index',
+    ]);

@@ -137,6 +137,25 @@
                 </div>
             </div>
 
+
+            <div class="row mt-5">
+                    <div class="col-md-12">
+                        <div class="card card_first_row bordered">
+                            <div class="card-header">
+                                <div class="card-title">
+                                    <h6>All Student</h6>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <p>Here you can check all students</p>
+
+                            </div>
+                            <div class="card-footer">
+                               <a href={{ route('jsondata.index') }} class="btn btn-success">Json Data</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
         </div>
     </div>
     @endsection

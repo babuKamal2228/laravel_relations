@@ -50,7 +50,7 @@
                 </form>
              </td> --}}
              <td>
-                <form action={{ route('subjects.destroy', $value->id) }} method="post">
+                <form action={{ route('student.destroy', $value->id) }} method="post">
                     @csrf
                     @method('DELETE')
                     <button type="submit" class="btn btn-danger">Delete</button>
